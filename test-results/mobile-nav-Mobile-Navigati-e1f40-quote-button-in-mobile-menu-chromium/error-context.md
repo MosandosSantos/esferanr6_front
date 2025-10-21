@@ -1,0 +1,525 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e6]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e8]
+      - link [ref=e10] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e11]
+      - link [ref=e13] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e14]
+    - banner [ref=e16]:
+      - generic [ref=e18]:
+        - link "EsferaNr6" [ref=e19] [cursor=pointer]:
+          - /url: /
+          - img "EsferaNr6" [ref=e20]
+        - text: / / / / / / /
+        - generic [ref=e21]:
+          - button "Open menu" [ref=e22] [cursor=pointer]:
+            - img [ref=e23]
+          - navigation "Mobile navigation" [ref=e25]:
+            - generic [ref=e26]:
+              - button "Close menu" [ref=e28] [cursor=pointer]:
+                - img [ref=e29]
+              - list [ref=e31]:
+                - listitem [ref=e32]:
+                  - generic [ref=e33] [cursor=pointer]: Home
+                - listitem [ref=e34]:
+                  - generic [ref=e35] [cursor=pointer]: Sobre
+                - listitem [ref=e36]:
+                  - generic [ref=e37] [cursor=pointer]: EsferaNR6
+                - listitem [ref=e38]:
+                  - generic [ref=e39] [cursor=pointer]: Projetos
+                - listitem [ref=e40]:
+                  - generic [ref=e41] [cursor=pointer]: Condições
+                - listitem [ref=e42]:
+                  - generic [ref=e43] [cursor=pointer]: Contato
+                - listitem [ref=e44]:
+                  - generic [ref=e45] [cursor=pointer]: Login
+              - button "Peça um orçamento" [active] [ref=e47] [cursor=pointer]:
+                - generic [ref=e48]: Peça um orçamento
+                - img [ref=e50]
+    - generic [ref=e55]:
+      - heading "A Revolução digital na gestão de EPI chegou." [level=1] [ref=e56]
+      - paragraph [ref=e57]: Planilhas, fichas de papel e controles manuais ficaram no passado. O EsferaNR6 é um sistema inteligente que centraliza a entrega de EPIs com identificação facial e biometria, prevê necessidades de estoque com IA e garante total conformidade com a NR-6 e indiretamente com a NR-7. Reduza custos, elimine falhas humanas e tenha uma gestão de segurança moderna, eficiente e à prova de auditorias.
+      - button "Solicite nosso orçamento" [ref=e59] [cursor=pointer]:
+        - generic [ref=e60]: Solicite nosso orçamento
+        - img [ref=e62]
+    - generic [ref=e68]:
+      - paragraph [ref=e71]: Sobre Nós
+      - heading "Focados em Inovação Disruptiva e Resultados Reais." [level=2] [ref=e73]
+      - paragraph [ref=e74]: Combinamos dados, ciência e tecnologia para impulsionar decisões inteligentes e transformar desafios complexos em oportunidades mensuráveis. Somos movidos pela busca constante da melhoria e da eficiência.
+      - generic [ref=e75]:
+        - img "Assinatura" [ref=e76]
+        - paragraph [ref=e77]: CEO - EsferaDataSci
+      - button "Contate-nos" [ref=e78] [cursor=pointer]:
+        - generic [ref=e79]: Contate-nos
+        - img [ref=e81]
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e88]: "%"
+        - paragraph [ref=e89]: Clientes Satisfeitos
+      - paragraph [ref=e91]: Projetos bem sucedidos em 2025
+      - generic [ref=e92]:
+        - generic [ref=e94]: +
+        - paragraph [ref=e95]: Linhas de Código entregues
+      - generic [ref=e96]:
+        - generic [ref=e98]: +
+        - paragraph [ref=e99]: Anos de experiência
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - paragraph [ref=e105]: Nossas Soluções
+        - heading "Soluções Completas para Gerenciamento de EPIs" [level=2] [ref=e107]
+        - paragraph [ref=e108]: EsferaNR6 é a plataforma mais completa para gerenciamento de EPIs, com conformidade total à NR-6 e integração opcional com NR-7.
+      - generic [ref=e109]:
+        - button "Gestão de EPI" [ref=e110] [cursor=pointer]:
+          - img [ref=e112]
+          - heading "Gestão de EPI" [level=4] [ref=e114]
+        - button "Estoque & Logística" [ref=e115] [cursor=pointer]:
+          - img [ref=e117]
+          - heading "Estoque & Logística" [level=4] [ref=e119]
+        - button "Entrega & Rastreio" [ref=e120] [cursor=pointer]:
+          - img [ref=e122]
+          - heading "Entrega & Rastreio" [level=4] [ref=e124]
+        - button "Conformidade NR-6" [ref=e125] [cursor=pointer]:
+          - img [ref=e127]
+          - heading "Conformidade NR-6" [level=4] [ref=e129]
+        - button "Integração NR-7 (opcional)" [ref=e130] [cursor=pointer]:
+          - img [ref=e132]
+          - heading "Integração NR-7 (opcional)" [level=4] [ref=e134]
+        - button "Dashboards & KPIs" [ref=e135] [cursor=pointer]:
+          - img [ref=e137]
+          - heading "Dashboards & KPIs" [level=4] [ref=e139]
+        - button "Compras & Fornecedores" [ref=e140] [cursor=pointer]:
+          - img [ref=e142]
+          - heading "Compras & Fornecedores" [level=4] [ref=e144]
+        - button "Integrações" [ref=e145] [cursor=pointer]:
+          - img [ref=e147]
+          - heading "Integrações" [level=4] [ref=e149]
+        - button "Alertas & Notificações" [ref=e150] [cursor=pointer]:
+          - img [ref=e152]
+          - heading "Alertas & Notificações" [level=4] [ref=e154]
+        - button "Acessos & Segurança" [ref=e155] [cursor=pointer]:
+          - img [ref=e157]
+          - heading "Acessos & Segurança" [level=4] [ref=e159]
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - img [ref=e165]
+            - generic [ref=e167]:
+              - heading "Gestão de EPI" [level=3] [ref=e168]
+              - paragraph [ref=e169]: Cadastro completo de EPIs com CA, validade e vinculação por função/risco.
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - generic [ref=e173]: Cadastro de EPIs com CA e validade
+            - listitem [ref=e174]:
+              - generic [ref=e176]: Kits por função e por risco
+            - listitem [ref=e177]:
+              - generic [ref=e179]: Bloqueio de EPI vencido/suspenso
+            - listitem [ref=e180]:
+              - generic [ref=e182]: Histórico de uso por colaborador
+          - button "Saiba Mais" [ref=e183] [cursor=pointer]:
+            - generic [ref=e184]: Saiba Mais
+            - img [ref=e186]
+        - generic [ref=e188]:
+          - img "Gestão de EPI - 1" [ref=e190]
+          - img "Gestão de EPI - 2" [ref=e192]
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: Quer conhecer todas as funcionalidades em detalhes?
+        - button "Agendar Demonstração" [ref=e195] [cursor=pointer]:
+          - generic [ref=e196]: Agendar Demonstração
+          - img [ref=e198]
+    - generic [ref=e200]:
+      - generic [ref=e202]:
+        - paragraph [ref=e205]: Nossos Projetos
+        - heading "EsferaDataSCI" [level=2] [ref=e207]
+        - paragraph [ref=e208]: Conheça os nossos projetos em diversas áreas.
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - generic [ref=e213]:
+            - img "Hiran Rangers Br" [ref=e215]
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - heading "Hiran Rangers Br" [level=4] [ref=e219]
+                - generic [ref=e220]:
+                  - img [ref=e221]
+                  - paragraph [ref=e223]: Site dos Hiran Rangers do Brasil
+              - link [ref=e224] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e225]
+          - generic [ref=e228]:
+            - img "Blindagem Trabalhista" [ref=e230]
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - heading "Blindagem Trabalhista" [level=4] [ref=e234]
+                - generic [ref=e235]:
+                  - img [ref=e236]
+                  - paragraph [ref=e238]: Sistema de Acompanhmento de Documentos trabalhistas
+              - link [ref=e239] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e240]
+          - generic [ref=e243]:
+            - img "Gestão de Documentos" [ref=e245]
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - heading "Gestão de Documentos" [level=4] [ref=e249]
+                - generic [ref=e250]:
+                  - img [ref=e251]
+                  - paragraph [ref=e253]: Sistema de Gestão de Documentos
+              - link [ref=e254] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e255]
+          - generic [ref=e258]:
+            - img "Landing Page" [ref=e260]
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - heading "Landing Page" [level=4] [ref=e264]
+                - generic [ref=e265]:
+                  - img [ref=e266]
+                  - paragraph [ref=e268]: Landing Page de Alta conversão
+              - link [ref=e269] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e270]
+        - generic [ref=e272] [cursor=pointer]:
+          - img
+        - generic [ref=e273] [cursor=pointer]:
+          - img
+    - generic [ref=e280]:
+      - generic [ref=e281]:
+        - paragraph [ref=e284]: Faq
+        - heading "Tem dúvidas? A gente te ajuda." [level=2] [ref=e286]
+        - paragraph [ref=e287]: "Dúvidas práticas do EsferaNR6: setup, usuários e permissões, check-out de EPIs, CA/alertas, dashboards, API e cobrança."
+      - list [ref=e288]:
+        - listitem [ref=e289]:
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - heading "O que é o EsferaEPI e para quem ele foi feito?" [level=4] [ref=e292]
+              - button [ref=e293] [cursor=pointer]:
+                - img [ref=e294]
+            - paragraph [ref=e296]: O EsferaEPI é um sistema de gestão de EPIs pensado para incorporadoras, obras e empreiteiras. Ele centraliza o controle de estoques, a entrega de EPIs aos colaboradores, a validade de CA, documentos e evidências de conformidade (NR6 e conexões com NR7), gerando relatórios para auditorias internas e fiscalizações.
+        - listitem [ref=e297]:
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - heading "A instalação é demorada?" [level=4] [ref=e300]
+              - button [ref=e301] [cursor=pointer]:
+                - img [ref=e302]
+            - paragraph [ref=e304]: Não. Instalação imediata. Criamos o ambiente, cadastramos sua organização e, em minutos, você já pode importar colaboradores, empresas e obras para começar a operar.
+        - listitem [ref=e305]:
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - heading "Como o sistema controla o CA (Certificado de Aprovação)?" [level=4] [ref=e308]
+              - button [ref=e309] [cursor=pointer]:
+                - img [ref=e310]
+            - paragraph [ref=e312]: Cada EPI cadastrado tem seu CA e data de validade. O sistema alerta com antecedência quando o CA está para vencer, bloqueia novas entregas de EPIs vencidos (se você desejar) e registra toda a rastreabilidade por lote/fornecedor, evitando uso de itens fora de conformidade.
+        - listitem [ref=e313]:
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - heading "De que forma o EsferaEPI ajuda na NR6?" [level=4] [ref=e316]
+              - button [ref=e317] [cursor=pointer]:
+                - img [ref=e318]
+            - paragraph [ref=e320]: A NR6 exige entrega, controle e substituição de EPIs com evidências. O sistema gera Termos de Responsabilidade (com assinatura eletrônica/biométrica opcional), mantém histórico de entregas por colaborador, controla vida útil e troca preventiva, e fornece relatórios que sustentam auditorias e inspeções.
+        - listitem [ref=e321]:
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - heading "E a NR7 (PCMSO) — qual a relação com o EsferaEPI?" [level=4] [ref=e324]
+              - button [ref=e325] [cursor=pointer]:
+                - img [ref=e326]
+            - paragraph [ref=e328]: "A NR7 trata de saúde ocupacional (PCMSO). O EsferaEPI concentra evidências complementares: vincula treinamentos, ASOs e documentos ao colaborador e ao posto de trabalho, facilitando a conferência entre aptidão médica e EPIs exigidos para a função. (Observação: o sistema não substitui seu software médico/PCMSO; ele integra evidências para auditorias)."
+        - listitem [ref=e329]:
+          - generic [ref=e330]:
+            - generic [ref=e331]:
+              - heading "Como o EsferaEPI ajuda a evitar multas?" [level=4] [ref=e332]
+              - button [ref=e333] [cursor=pointer]:
+                - img [ref=e334]
+            - paragraph [ref=e336]: Com alertas de validade de CA, bloqueio opcional de entrega de EPI irregular, histórico completo de entregas, relatórios de conformidade por obra/empresa e rastreabilidade por colaborador e por item, você reduz falhas operacionais e mitiga riscos de autuação por descumprimento da NR6 e uso de EPIs inadequados.
+        - listitem [ref=e337]:
+          - generic [ref=e338]:
+            - generic [ref=e339]:
+              - heading "Incorporadoras podem auditar as empreiteiras? E as obras?" [level=4] [ref=e340]
+              - button [ref=e341] [cursor=pointer]:
+                - img [ref=e342]
+            - paragraph [ref=e344]: "Sim. A arquitetura é multi-nível - Incorporadoras: acompanham todas as obras e todas as empreiteiras vinculadas (visão 360 e relatórios comparativos). - Obras: fiscalizam colaboradores de várias empreiteiras na obra, com filtros por frente de serviço/função. Empreiteiras: visualizam somente seus colaboradores e entregas. Os perfis de acesso garantem que cada papel veja apenas o que deve."
+        - listitem [ref=e345]:
+          - generic [ref=e346]:
+            - generic [ref=e347]:
+              - heading "Como é a cobrança do sistema?" [level=4] [ref=e348]
+              - button [ref=e349] [cursor=pointer]:
+                - img [ref=e350]
+            - paragraph [ref=e352]: O valor é por quantidade de funcionários ativos (pay-as-you-grow). Você pode começar pequeno e escalar conforme a operação cresce. Obras e empreiteiras entram no mesmo ecossistema, sem surpresas de custo por obra.
+        - listitem [ref=e353]:
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - heading "Quais são os principais benefícios práticos no dia a dia?" [level=4] [ref=e356]
+              - button [ref=e357] [cursor=pointer]:
+                - img [ref=e358]
+            - paragraph [ref=e360]: "Rastreabilidade total: quem recebeu o quê, quando, de qual lote/CA. Prevenção: alertas de CA e trocas programadas. Produtividade: check-out de EPIs rápido (com assinatura eletrônica/biometria facial, opcional). Visão executiva: dashboards por obra/empresa/função. Evidência para auditoria: documentos e logs organizados em segundos."
+        - listitem [ref=e361]:
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - heading "O EsferaEPI integra com outros sistemas e facilita a migração?" [level=4] [ref=e364]
+              - button [ref=e365] [cursor=pointer]:
+                - img [ref=e366]
+            - paragraph [ref=e368]: Sim. Você pode importar planilhas (Excel/CSV) de colaboradores, funções e EPIs, e integrar via API com RH, compras e ERPs (para consumo/estoque). Também é possível anexar documentos comprobatórios (certificados, ASOs, manuais) por colaborador e por EPI.
+        - listitem [ref=e369]:
+          - generic [ref=e370]:
+            - generic [ref=e371]:
+              - heading "O sistema é seguro e está em conformidade com a LGPD?" [level=4] [ref=e372]
+              - button [ref=e373] [cursor=pointer]:
+                - img [ref=e374]
+            - paragraph [ref=e376]: Sim. Contamos com perfis de acesso, criptografia em trânsito, logs de auditoria, segregação de dados entre empresas/obras e políticas de retenção. As informações pessoais são tratadas segundo boas práticas de LGPD. Há backup e planos de contingência para garantir disponibilidade.
+        - listitem [ref=e377]:
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - heading "Como começar e quais são os prazos de onboarding?" [level=4] [ref=e380]
+              - button [ref=e381] [cursor=pointer]:
+                - img [ref=e382]
+            - paragraph [ref=e384]: Basta criar sua conta e enviar a base mínima (obras, empresas, colaboradores e EPIs). Em poucas horas, sua operação já está registrando entregas e gerando evidências. Oferecemos suporte, materiais de treinamento rápido e templates de importação para acelerar.
+    - generic [ref=e385]: Testimonials
+    - generic [ref=e387]:
+      - generic [ref=e388]:
+        - paragraph [ref=e391]: Planos e Preços
+        - heading "Escolha o Plano Ideal para Sua Empresa" [level=2] [ref=e393]
+        - paragraph [ref=e394]: Transparência total. Sem taxas ocultas. Cancele quando quiser. Comece com 14 dias grátis em qualquer plano.
+        - generic [ref=e395]:
+          - button "Mensal" [ref=e396] [cursor=pointer]
+          - button "Anual -17%" [ref=e397] [cursor=pointer]:
+            - text: Anual
+            - generic [ref=e398]: "-17%"
+      - generic [ref=e399]:
+        - generic [ref=e400]:
+          - generic [ref=e401]: Mais Popular
+          - generic [ref=e402]:
+            - heading "Starter" [level=3] [ref=e403]
+            - paragraph [ref=e404]: Ideal para pequenas empresas começarem
+            - generic [ref=e405]:
+              - generic [ref=e406]:
+                - img [ref=e407]
+                - generic [ref=e409]: Até 100 funcionários
+              - generic [ref=e410]:
+                - img [ref=e411]
+                - generic [ref=e413]: 3 logins simultâneos
+            - generic [ref=e414]:
+              - generic [ref=e415]:
+                - generic [ref=e416]: R$
+                - generic [ref=e417]: 99,90
+              - paragraph [ref=e418]: por mês
+          - list [ref=e419]:
+            - listitem [ref=e420]:
+              - img [ref=e422]
+              - generic [ref=e424]: Gestão de entrega de EPIs
+            - listitem [ref=e425]:
+              - img [ref=e427]
+              - generic [ref=e429]: Identificação facial básica
+            - listitem [ref=e430]:
+              - img [ref=e432]
+              - generic [ref=e434]: Controle biométrico digital
+            - listitem [ref=e435]:
+              - img [ref=e437]
+              - generic [ref=e439]: Relatórios de conformidade NR-6
+            - listitem [ref=e440]:
+              - img [ref=e442]
+              - generic [ref=e444]: Alertas de validade
+            - listitem [ref=e445]:
+              - img [ref=e447]
+              - generic [ref=e449]: Suporte via email
+            - listitem [ref=e450]:
+              - img [ref=e452]
+              - generic [ref=e454]: Backup automático diário
+          - button "Começar Teste" [ref=e456] [cursor=pointer]:
+            - generic [ref=e457]: Começar Teste
+            - img [ref=e459]
+        - generic [ref=e461]:
+          - generic [ref=e462]: Recomendado
+          - generic [ref=e463]:
+            - heading "Professional" [level=3] [ref=e464]
+            - paragraph [ref=e465]: Para empresas em crescimento
+            - generic [ref=e466]:
+              - generic [ref=e467]:
+                - img [ref=e468]
+                - generic [ref=e470]: Até 300 funcionários
+              - generic [ref=e471]:
+                - img [ref=e472]
+                - generic [ref=e474]: 5 logins simultâneos
+            - generic [ref=e475]:
+              - generic [ref=e476]:
+                - generic [ref=e477]: R$
+                - generic [ref=e478]: 279,99
+              - paragraph [ref=e479]: por mês
+          - list [ref=e480]:
+            - listitem [ref=e481]:
+              - img [ref=e483]
+              - generic [ref=e485]: Tudo do plano Starter
+            - listitem [ref=e486]:
+              - img [ref=e488]
+              - generic [ref=e490]: Identificação facial avançada (anti-fraude)
+            - listitem [ref=e491]:
+              - img [ref=e493]
+              - generic [ref=e495]: Integração biométrica completa
+            - listitem [ref=e496]:
+              - img [ref=e498]
+              - generic [ref=e500]: Previsão de estoque com IA
+            - listitem [ref=e501]:
+              - img [ref=e503]
+              - generic [ref=e505]: Dashboards personalizáveis
+            - listitem [ref=e506]:
+              - img [ref=e508]
+              - generic [ref=e510]: Conformidade NR-6 + NR-7
+            - listitem [ref=e511]:
+              - img [ref=e513]
+              - generic [ref=e515]: Suporte prioritário (chat + email)
+            - listitem [ref=e516]:
+              - img [ref=e518]
+              - generic [ref=e520]: Relatórios customizados
+            - listitem [ref=e521]:
+              - img [ref=e523]
+              - generic [ref=e525]: API para integrações
+          - button "Começar Agora" [ref=e527] [cursor=pointer]:
+            - generic [ref=e528]: Começar Agora
+            - img [ref=e530]
+        - generic [ref=e532]:
+          - generic [ref=e533]: Máximo Poder
+          - generic [ref=e534]:
+            - heading "Enterprise" [level=3] [ref=e535]
+            - paragraph [ref=e536]: Solução completa para grandes operações
+            - generic [ref=e537]:
+              - generic [ref=e538]:
+                - img [ref=e539]
+                - generic [ref=e541]: Acima de 500 funcionários
+              - generic [ref=e542]:
+                - img [ref=e543]
+                - generic [ref=e545]: Logins ilimitados
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - generic [ref=e548]: R$
+                - generic [ref=e549]: 450,00
+              - paragraph [ref=e550]: por mês
+          - list [ref=e551]:
+            - listitem [ref=e552]:
+              - img [ref=e554]
+              - generic [ref=e556]: Tudo do plano Professional
+            - listitem [ref=e557]:
+              - img [ref=e559]
+              - generic [ref=e561]: Identificação facial com IA (liveness detection)
+            - listitem [ref=e562]:
+              - img [ref=e564]
+              - generic [ref=e566]: IA avançada para análise preditiva
+            - listitem [ref=e567]:
+              - img [ref=e569]
+              - generic [ref=e571]: Multi-filiais e centros de custo
+            - listitem [ref=e572]:
+              - img [ref=e574]
+              - generic [ref=e576]: Gestão completa de auditorias
+            - listitem [ref=e577]:
+              - img [ref=e579]
+              - generic [ref=e581]: Suporte 24/7 dedicado
+            - listitem [ref=e582]:
+              - img [ref=e584]
+              - generic [ref=e586]: Onboarding personalizado
+            - listitem [ref=e587]:
+              - img [ref=e589]
+              - generic [ref=e591]: Treinamento da equipe incluído
+            - listitem [ref=e592]:
+              - img [ref=e594]
+              - generic [ref=e596]: SLA garantido de 99.9%
+            - listitem [ref=e597]:
+              - img [ref=e599]
+              - generic [ref=e601]: Customizações sob demanda
+          - button "Começar Teste" [ref=e603] [cursor=pointer]:
+            - generic [ref=e604]: Começar Teste
+            - img [ref=e606]
+      - generic [ref=e608]:
+        - paragraph [ref=e609]: Todos os planos incluem 14 dias de teste grátis. Não é necessário cartão de crédito.
+        - generic [ref=e610]:
+          - generic [ref=e611]:
+            - img [ref=e612]
+            - generic [ref=e614]: Migração gratuita de dados
+          - generic [ref=e615]:
+            - img [ref=e616]
+            - generic [ref=e618]: Cancelamento a qualquer momento
+          - generic [ref=e619]:
+            - img [ref=e620]
+            - generic [ref=e622]: Suporte em português
+    - generic [ref=e626]:
+      - generic [ref=e627]:
+        - generic [ref=e628]:
+          - heading "Contate-nos" [level=4] [ref=e629]
+          - paragraph [ref=e630]: Cada grande projeto começa com uma conversa. Nós cuidamos de transformá-la em inovação e resultado real. Conte-nos sua ideia.
+          - generic [ref=e631]:
+            - generic [ref=e632]:
+              - img [ref=e634]
+              - generic [ref=e636]:
+                - heading "Envie um email" [level=5] [ref=e637]
+                - paragraph [ref=e638]: Nosso time responderá em breve.
+                - paragraph [ref=e639]: mosansantos@yahoo.com.br
+            - generic [ref=e640]:
+              - img [ref=e642]
+              - generic [ref=e644]:
+                - heading "Ligue para nós" [level=5] [ref=e645]
+                - paragraph [ref=e646]: Disponível em horário comercial.
+                - paragraph [ref=e647]: +55 (21) 99941-7097
+        - generic [ref=e648]:
+          - link [ref=e649] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e650]
+          - link [ref=e652] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e653]
+          - link [ref=e655] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e656]
+      - generic [ref=e658]:
+        - heading "Solicite um Orçamento" [level=2] [ref=e659]
+        - paragraph [ref=e660]: Descubra o potencial do que podemos criar juntos. Preencha o formulário abaixo.
+        - generic [ref=e661]:
+          - generic [ref=e662]:
+            - textbox "Nome Completo" [ref=e663]
+            - textbox "Endereço de E-mail" [ref=e664]
+            - generic [ref=e665]:
+              - textbox "Telefone" [ref=e666]
+              - combobox [ref=e667] [cursor=pointer]:
+                - generic: Selecione um Serviço
+                - img
+              - combobox [ref=e668]
+          - generic [ref=e669]:
+            - textbox "Entre com sua mensagem" [ref=e670]
+            - button "Enviar mensagem" [ref=e671] [cursor=pointer]:
+              - generic [ref=e672]: Enviar mensagem
+              - img [ref=e674]
+    - contentinfo [ref=e676]:
+      - generic [ref=e677]:
+        - generic [ref=e678]:
+          - generic [ref=e679]:
+            - link "EsferaNr6" [ref=e680] [cursor=pointer]:
+              - /url: /
+              - img "EsferaNr6" [ref=e681]
+            - paragraph [ref=e682]: "EsferaNR6: controle total de EPIs com biometria e IA — menos planilhas, zero multas e mais segurança para sua equipe."
+            - generic [ref=e684]:
+              - link [ref=e685] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e686]
+              - link [ref=e688] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e689]
+              - link [ref=e691] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e692]
+          - generic [ref=e694]:
+            - heading "Contato" [level=4] [ref=e695]
+            - generic [ref=e696]:
+              - img [ref=e697]
+              - heading "Telefone:" [level=5] [ref=e699]
+              - paragraph [ref=e700]: +55 (21) 99941-7097
+            - generic [ref=e701]:
+              - img [ref=e702]
+              - heading "E-mail:" [level=5] [ref=e704]
+              - paragraph [ref=e705]: mosansantos@yahoo.com.br
+        - paragraph [ref=e707]: Todos os direitos reservados a Mosán dos Santos
+  - button "Open Next.js Dev Tools" [ref=e713] [cursor=pointer]:
+    - img [ref=e714]
+  - alert [ref=e717]
+```

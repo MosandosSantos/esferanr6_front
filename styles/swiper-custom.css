@@ -1,0 +1,266 @@
+/* ========================================
+   SWIPER CUSTOMIZATION - Work Component
+   ======================================== */
+
+/* Container principal */
+.work-swiper {
+  padding: 40px 0 80px 0;
+  position: relative;
+}
+
+/* Slides */
+.work-swiper .swiper-slide {
+  width: 380px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-swiper .swiper-slide-active {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+/* Botões de navegação */
+.work-swiper .swiper-button-next,
+.work-swiper .swiper-button-prev {
+  color: var(--accent, #ffca3b);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Fallback para navegadores sem suporte a backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+  .work-swiper .swiper-button-next,
+  .work-swiper .swiper-button-prev {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.work-swiper .swiper-button-next:hover,
+.work-swiper .swiper-button-prev:hover {
+  background: var(--accent, #ffca3b);
+  color: var(--primary, #121315);
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.work-swiper .swiper-button-next:focus,
+.work-swiper .swiper-button-prev:focus {
+  outline: 2px solid var(--accent, #ffca3b);
+  outline-offset: 2px;
+}
+
+.work-swiper .swiper-button-next::after,
+.work-swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Desabilitar botões quando necessário */
+.work-swiper .swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Paginação */
+.work-swiper .swiper-pagination {
+  bottom: 20px;
+}
+
+.work-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-swiper .swiper-pagination-bullet:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.work-swiper .swiper-pagination-bullet-active {
+  background: var(--accent, #ffca3b);
+  width: 30px;
+  border-radius: 6px;
+}
+
+.work-swiper .swiper-pagination-bullet:focus {
+  outline: 2px solid var(--accent, #ffca3b);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile (320px - 767px) */
+@media (max-width: 767px) {
+  .work-swiper {
+    padding: 30px 0 60px 0;
+  }
+
+  .work-swiper .swiper-slide {
+    width: 320px;
+    height: 480px;
+  }
+
+  .work-swiper .swiper-slide-active {
+    transform: scale(1.02); /* Menos zoom em mobile */
+  }
+
+  .work-swiper .swiper-button-next,
+  .work-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-swiper .swiper-button-next::after,
+  .work-swiper .swiper-button-prev::after {
+    font-size: 16px;
+  }
+
+  .work-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .work-swiper .swiper-pagination-bullet-active {
+    width: 24px;
+  }
+}
+
+/* Tablet landscape e acima (768px+) */
+@media (min-width: 768px) {
+  .work-swiper .swiper-slide {
+    width: 380px;
+    height: 500px;
+  }
+}
+
+/* Desktop grande (1200px+) */
+@media (min-width: 1200px) {
+  .work-swiper {
+    padding: 50px 0 100px 0;
+  }
+
+  .work-swiper .swiper-slide {
+    width: 400px;
+    height: 520px;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY & REDUCED MOTION
+   ======================================== */
+
+/* Respeitar preferência de animação reduzida */
+@media (prefers-reduced-motion: reduce) {
+  .work-swiper .swiper-slide,
+  .work-swiper .swiper-button-next,
+  .work-swiper .swiper-button-prev,
+  .work-swiper .swiper-pagination-bullet {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .work-swiper .swiper-slide-active {
+    transform: none;
+  }
+
+  .work-swiper .swiper-button-next:hover,
+  .work-swiper .swiper-button-prev:hover {
+    transform: none;
+  }
+}
+
+/* Melhorar contraste para high contrast mode */
+@media (prefers-contrast: high) {
+  .work-swiper .swiper-button-next,
+  .work-swiper .swiper-button-prev {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid var(--accent, #ffca3b);
+  }
+
+  .work-swiper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .work-swiper .swiper-pagination-bullet-active {
+    border: 2px solid var(--accent, #ffca3b);
+  }
+}
+
+/* Melhorar visibilidade do foco para navegação por teclado */
+.work-swiper .swiper-button-next:focus-visible,
+.work-swiper .swiper-button-prev:focus-visible,
+.work-swiper .swiper-pagination-bullet:focus-visible {
+  outline: 3px solid var(--accent, #ffca3b);
+  outline-offset: 3px;
+}
+
+/* ========================================
+   DARK MODE SUPPORT (opcional)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  .work-swiper .swiper-button-next,
+  .work-swiper .swiper-button-prev {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .work-swiper .swiper-button-next:hover,
+  .work-swiper .swiper-button-prev:hover {
+    background: var(--accent, #ffca3b);
+  }
+}
+
+/* Se estiver usando next-themes */
+[data-theme='dark'] .work-swiper .swiper-button-next,
+[data-theme='dark'] .work-swiper .swiper-button-prev {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .work-swiper .swiper-button-next:hover,
+[data-theme='dark'] .work-swiper .swiper-button-prev:hover {
+  background: var(--accent, #ffca3b);
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Usar GPU acceleration para animações suaves */
+.work-swiper .swiper-slide,
+.work-swiper .swiper-button-next,
+.work-swiper .swiper-button-prev {
+  will-change: transform;
+}
+
+/* Limpar will-change após animação */
+.work-swiper .swiper-slide:not(.swiper-slide-active) {
+  will-change: auto;
+}
+
+/* Prevenir FOUC (Flash of Unstyled Content) */
+.work-swiper {
+  min-height: 600px;
+}
+
+@media (max-width: 767px) {
+  .work-swiper {
+    min-height: 540px;
+  }
+}

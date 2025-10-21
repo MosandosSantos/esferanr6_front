@@ -1,0 +1,1301 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\playwright.config.js",
+    "rootDir": "C:/Users/mosan/Documents/Sistemas/esferaEPI/frontend/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/mosan/Documents/Sistemas/esferaEPI/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/mosan/Documents/Sistemas/esferaEPI/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- -p 3001",
+      "port": 3001,
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "mobile-nav.spec.js",
+      "file": "mobile-nav.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mobile Navigation Menu - Responsive Testing",
+          "file": "mobile-nav.spec.js",
+          "line": 39,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Mobile Portrait (375x667)",
+              "file": "mobile-nav.spec.js",
+              "line": 41,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show header with hamburger menu icon when closed",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 23623,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:55:37",
+                            "location": {
+                              "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                              "column": 37,
+                              "line": 55
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m       \u001b[90m// Verify hamburger icon is visible\u001b[39m\n \u001b[90m 54 |\u001b[39m       \u001b[36mconst\u001b[39m hamburgerButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label*=\"menu\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m       \u001b[36mawait\u001b[39m expect(hamburgerButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m       \u001b[90m// Verify it shows the menu icon (not close icon)\u001b[39m\n \u001b[90m 58 |\u001b[39m       \u001b[36mconst\u001b[39m menuIcon \u001b[33m=\u001b[39m hamburgerButton\u001b[33m.\u001b[39mlocator(\u001b[32m'svg'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 37,
+                                "line": 55
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  53 |       // Verify hamburger icon is visible\n  54 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 55 |       await expect(hamburgerButton).toBeVisible();\n     |                                     ^\n  56 |\n  57 |       // Verify it shows the menu icon (not close icon)\n  58 |       const menuIcon = hamburgerButton.locator('svg');\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:55:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:28:59.948Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-06062-urger-menu-icon-when-closed-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-06062-urger-menu-icon-when-closed-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-06062-urger-menu-icon-when-closed-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 37,
+                            "line": 55
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-23fd626d8d275cf13782",
+                  "file": "mobile-nav.spec.js",
+                  "line": 44,
+                  "column": 5
+                },
+                {
+                  "title": "should open menu with slide-in animation when hamburger clicked",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31159,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 74
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  72 |\n  73 |       // Click hamburger to open menu\n> 74 |       await hamburgerButton.click();\n     |                             ^\n  75 |\n  76 |       // Wait for menu to appear\n  77 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:74:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:29:25.771Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-6b4e5-tion-when-hamburger-clicked-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-6b4e5-tion-when-hamburger-clicked-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-6b4e5-tion-when-hamburger-clicked-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-27309db12bf80229f39a",
+                  "file": "mobile-nav.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should close menu when close (X) button clicked",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31274,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 115
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  113 |       // Open menu\n  114 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 115 |       await hamburgerButton.click();\n      |                             ^\n  116 |\n  117 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  118 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:115:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:29:58.287Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-dde12-when-close-X-button-clicked-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-dde12-when-close-X-button-clicked-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-dde12-when-close-X-button-clicked-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-a35541b24a603dc76069",
+                  "file": "mobile-nav.spec.js",
+                  "line": 110,
+                  "column": 5
+                },
+                {
+                  "title": "should close menu when overlay clicked",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31178,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 142
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  140 |       // Open menu\n  141 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 142 |       await hamburgerButton.click();\n      |                             ^\n  143 |\n  144 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  145 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:142:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:30:30.842Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-0a715-e-menu-when-overlay-clicked-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-0a715-e-menu-when-overlay-clicked-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-0a715-e-menu-when-overlay-clicked-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-4fddc853030e09a511ef",
+                  "file": "mobile-nav.spec.js",
+                  "line": 137,
+                  "column": 5
+                },
+                {
+                  "title": "should close menu when navigation link clicked",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31127,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 165
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  163 |       // Open menu\n  164 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 165 |       await hamburgerButton.click();\n      |                             ^\n  166 |\n  167 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  168 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:165:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:31:03.382Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-91eaf-hen-navigation-link-clicked-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-91eaf-hen-navigation-link-clicked-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-91eaf-hen-navigation-link-clicked-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-d8a88bc9d8a2563c7cbc",
+                  "file": "mobile-nav.spec.js",
+                  "line": 160,
+                  "column": 5
+                },
+                {
+                  "title": "should verify hover states on navigation links",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31160,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 188
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  186 |       // Open menu\n  187 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 188 |       await hamburgerButton.click();\n      |                             ^\n  189 |\n  190 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  191 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:188:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:31:35.917Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-d39e2--states-on-navigation-links-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-d39e2--states-on-navigation-links-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-d39e2--states-on-navigation-links-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-4ccc67ccf662f403c62b",
+                  "file": "mobile-nav.spec.js",
+                  "line": 183,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Mobile Landscape (667x375)",
+              "file": "mobile-nav.spec.js",
+              "line": 207,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display correctly in landscape mode - closed",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 7418,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:220:37",
+                            "location": {
+                              "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                              "column": 37,
+                              "line": 220
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 218 |\u001b[39m       \u001b[90m// Verify hamburger is visible\u001b[39m\n \u001b[90m 219 |\u001b[39m       \u001b[36mconst\u001b[39m hamburgerButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label*=\"menu\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m expect(hamburgerButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 221 |\u001b[39m\n \u001b[90m 222 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'✓ Mobile landscape - menu closed state verified'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 223 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 37,
+                                "line": 220
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  218 |       // Verify hamburger is visible\n  219 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 220 |       await expect(hamburgerButton).toBeVisible();\n      |                                     ^\n  221 |\n  222 |       console.log('✓ Mobile landscape - menu closed state verified');\n  223 |     });\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:220:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:32:08.349Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-875c4--in-landscape-mode---closed-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-875c4--in-landscape-mode---closed-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-875c4--in-landscape-mode---closed-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 37,
+                            "line": 220
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-0c2ea5eefa175e37a465",
+                  "file": "mobile-nav.spec.js",
+                  "line": 210,
+                  "column": 5
+                },
+                {
+                  "title": "should display correctly in landscape mode - opened",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 31447,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 229
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  227 |\n  228 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 229 |       await hamburgerButton.click();\n      |                             ^\n  230 |\n  231 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  232 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:229:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:32:17.226Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-1c871--in-landscape-mode---opened-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-1c871--in-landscape-mode---opened-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-1c871--in-landscape-mode---opened-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-e3efc6b67b64a762f7b3",
+                  "file": "mobile-nav.spec.js",
+                  "line": 225,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Tablet (768x1024)",
+              "file": "mobile-nav.spec.js",
+              "line": 249,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show mobile navigation on tablet - closed",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 7546,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:262:37",
+                            "location": {
+                              "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                              "column": 37,
+                              "line": 262
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 260 |\u001b[39m       \u001b[90m// Verify hamburger is visible (since xl breakpoint is 1280px)\u001b[39m\n \u001b[90m 261 |\u001b[39m       \u001b[36mconst\u001b[39m hamburgerButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label*=\"menu\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 262 |\u001b[39m       \u001b[36mawait\u001b[39m expect(hamburgerButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 263 |\u001b[39m\n \u001b[90m 264 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'✓ Tablet - menu closed state verified'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 265 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 37,
+                                "line": 262
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('button[aria-label*=\"menu\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  260 |       // Verify hamburger is visible (since xl breakpoint is 1280px)\n  261 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 262 |       await expect(hamburgerButton).toBeVisible();\n      |                                     ^\n  263 |\n  264 |       console.log('✓ Tablet - menu closed state verified');\n  265 |     });\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:262:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:32:50.128Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-b77d4-vigation-on-tablet---closed-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-b77d4-vigation-on-tablet---closed-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-b77d4-vigation-on-tablet---closed-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 37,
+                            "line": 262
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-ba5ba4746fb03063e36f",
+                  "file": "mobile-nav.spec.js",
+                  "line": 252,
+                  "column": 5
+                },
+                {
+                  "title": "should show mobile navigation on tablet - opened",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 32147,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 29,
+                                "line": 271
+                              },
+                              "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  269 |\n  270 |       const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 271 |       await hamburgerButton.click();\n      |                             ^\n  272 |\n  273 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  274 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:271:29"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:32:59.091Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-09c75-vigation-on-tablet---opened-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-09c75-vigation-on-tablet---opened-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-09c75-vigation-on-tablet---opened-chromium\\error-context.md"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-bf43f669d09372261300",
+                  "file": "mobile-nav.spec.js",
+                  "line": 267,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Desktop (1280x720)",
+              "file": "mobile-nav.spec.js",
+              "line": 291,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show desktop navigation, NOT mobile menu",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 7763,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('header nav.hidden.xl\\\\:flex')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('header nav.hidden.xl\\\\:flex')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('header nav.hidden.xl\\\\:flex')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('header nav.hidden.xl\\\\:flex')\u001b[22m\n\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:308:32",
+                            "location": {
+                              "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                              "column": 32,
+                              "line": 308
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 306 |\u001b[39m       \u001b[90m// Verify desktop navigation is visible\u001b[39m\n \u001b[90m 307 |\u001b[39m       \u001b[36mconst\u001b[39m desktopNav \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'header nav.hidden.xl\\\\:flex'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 308 |\u001b[39m       \u001b[36mawait\u001b[39m expect(desktopNav)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 309 |\u001b[39m\n \u001b[90m 310 |\u001b[39m       \u001b[90m// Verify all links are visible in desktop nav\u001b[39m\n \u001b[90m 311 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m link \u001b[36mof\u001b[39m \u001b[33mNAV_LINKS\u001b[39m) {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                                "column": 32,
+                                "line": 308
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('header nav.hidden.xl\\\\:flex')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('header nav.hidden.xl\\\\:flex')\u001b[22m\n\n\n  306 |       // Verify desktop navigation is visible\n  307 |       const desktopNav = page.locator('header nav.hidden.xl\\\\:flex');\n> 308 |       await expect(desktopNav).toBeVisible();\n      |                                ^\n  309 |\n  310 |       // Verify all links are visible in desktop nav\n  311 |       for (const link of NAV_LINKS) {\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:308:32"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-19T15:33:32.704Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-00c2b--navigation-NOT-mobile-menu-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-00c2b--navigation-NOT-mobile-menu-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-00c2b--navigation-NOT-mobile-menu-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 32,
+                            "line": 308
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2658a5cb0a709a925606-02eb901e86fe2dfa518d",
+                  "file": "mobile-nav.spec.js",
+                  "line": 294,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mobile Navigation - Functional Testing",
+          "file": "mobile-nav.spec.js",
+          "line": 325,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should test all navigation links",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31132,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 29,
+                            "line": 335
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  333 |     for (const link of NAV_LINKS) {\n  334 |       // Open menu\n> 335 |       await hamburgerButton.click();\n      |                             ^\n  336 |\n  337 |       const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  338 |       await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:335:29"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:33:42.006Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-729d7-d-test-all-navigation-links-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-729d7-d-test-all-navigation-links-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-729d7-d-test-all-navigation-links-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-6e3453f7351115b57ec0",
+              "file": "mobile-nav.spec.js",
+              "line": 328,
+              "column": 3
+            },
+            {
+              "title": "should test quote button in mobile menu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31174,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 27,
+                            "line": 358
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  356 |\n  357 |     const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 358 |     await hamburgerButton.click();\n      |                           ^\n  359 |\n  360 |     const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  361 |     await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:358:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:34:14.442Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-e1f40-quote-button-in-mobile-menu-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-e1f40-quote-button-in-mobile-menu-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-e1f40-quote-button-in-mobile-menu-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-8f176efd0815bd0b0fc7",
+              "file": "mobile-nav.spec.js",
+              "line": 354,
+              "column": 3
+            },
+            {
+              "title": "should verify accessibility attributes",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31127,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 45,
+                            "line": 383
+                          },
+                          "message": "Error: locator.getAttribute: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  381 |\n  382 |     // Check aria-label exists\n> 383 |     const ariaLabel = await hamburgerButton.getAttribute('aria-label');\n      |                                             ^\n  384 |     expect(ariaLabel).toBeTruthy();\n  385 |\n  386 |     // Check aria-expanded\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:383:45"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:34:46.958Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-9578b-fy-accessibility-attributes-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-9578b-fy-accessibility-attributes-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-9578b-fy-accessibility-attributes-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-678cf63b73405101af94",
+              "file": "mobile-nav.spec.js",
+              "line": 377,
+              "column": 3
+            },
+            {
+              "title": "should verify smooth animations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31190,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 27,
+                            "line": 415
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  413 |\n  414 |     // Open menu\n> 415 |     await hamburgerButton.click();\n      |                           ^\n  416 |     await expect(mobileNav).toBeVisible();\n  417 |\n  418 |     const openTime = Date.now() - startTime;\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:415:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:35:19.297Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-83ef8-ld-verify-smooth-animations-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-83ef8-ld-verify-smooth-animations-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-83ef8-ld-verify-smooth-animations-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-71f78c236c9cf48efe82",
+              "file": "mobile-nav.spec.js",
+              "line": 405,
+              "column": 3
+            },
+            {
+              "title": "should verify menu does not interfere with page scroll",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31109,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 27,
+                            "line": 445
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  443 |     // Open menu\n  444 |     const hamburgerButton = page.locator('button[aria-label*=\"menu\"]').first();\n> 445 |     await hamburgerButton.click();\n      |                           ^\n  446 |\n  447 |     const mobileNav = page.locator('nav[aria-label=\"Mobile navigation\"]');\n  448 |     await expect(mobileNav).toBeVisible();\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:445:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:35:51.901Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-78295--interfere-with-page-scroll-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-78295--interfere-with-page-scroll-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-78295--interfere-with-page-scroll-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-9171f3c6aa5c6348e1ef",
+              "file": "mobile-nav.spec.js",
+              "line": 440,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Mobile Navigation - Visual Regression",
+          "file": "mobile-nav.spec.js",
+          "line": 468,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should capture menu states for visual comparison",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31216,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js",
+                            "column": 27,
+                            "line": 484
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label*=\"menu\"]').first()\u001b[22m\n\n\n  482 |\n  483 |     // State 2: Menu opening (mid-animation)\n> 484 |     await hamburgerButton.click();\n      |                           ^\n  485 |     await page.waitForTimeout(150); // Mid-animation\n  486 |     await page.screenshot({\n  487 |       path: 'test-results/screenshots/visual-02-opening.png',\n    at C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\tests\\e2e\\mobile-nav.spec.js:484:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-19T15:36:24.189Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-2213f-tates-for-visual-comparison-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-2213f-tates-for-visual-comparison-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\mosan\\Documents\\Sistemas\\esferaEPI\\frontend\\test-results\\mobile-nav-Mobile-Navigati-2213f-tates-for-visual-comparison-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2658a5cb0a709a925606-cc1260979b3757c1f593",
+              "file": "mobile-nav.spec.js",
+              "line": 471,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-19T15:28:58.864Z",
+    "duration": 477293.503,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 17,
+    "flaky": 0
+  }
+}
